@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div clas="container">
+    <div class="jumbotron text-center">
+      <h1>All About Mars!</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Mars Scraping!</a></p>
+    </div>
+      
+    <!-- News -->
+    <div class="row" id="mars-news">
+      <div class="col-md-12">
+        <h1 class="heading">Latest Mars News</h1>
+        <h3 class="heading">{{mars.news_title}}</h3>
+        <h4 class="heading">{{mars.news_p}}</h4>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <!-- JPL Feature image -->
+      <div class="col-md-8">
+        <h1 class="heading">JPL Featured Mars Image</h1>
+        <img class="img-responsive" src="{{mars.featured_image_url}}" alt="JPL Featured Image">
+      </div>
+      <!-- Weather -->
+      <div class="col-md-4">
+        <h4 class="heading">Mars Weather</h4>
+        <h4 class="heading">{{mars.mars_weather}}</h4>
+      </div>
+      <!-- Mars Facts -->
+      <div class="col-md-4">
+        <h2 class="heading">Mars Facts</h2>
+        <h4 class="heading">{{mars.facts}}</h4>
+      </div>
+    </div>  
+      <!-- Mars hemispheres -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="hemisphere">
+          <h2 class="heading">Valles Marineris Hemisphere</h2>
+          <img class="img-responsive" src={{mars.VallesMarinerisHemisphere}} alt="Valles Marineris Hemisphere">
+        </div>
+      </div>
+        <div class="col-md-6">
+          <div class="hemisphere">
+            <h2 class="heading">Cerberus Hemisphere</h2>
+            <img class="img-responsive" src={{mars.CerberusHemisphere}} alt="Cerberus Hemiosphere">
+          </div> 
+        </div>
+        <div class="col-md-6">
+          <div class="hemisphere">
+            <h2 class="heading">Schiaparelli Hemisphere</h2>
+            <img class="img-responsive" src={{mars.SchiaparelliHemisphere}} alt="Schiaparelli Hemisphere">
+          </div> 
+        </div>
+        <div class="col-md-6">
+          <div class="hemisphere">
+                <h2 class="heading">Syrtis Major Hemisphere</h2>
+                <img class="img-responsive" src={{mars.SyrtisMajorHemisphere}} alt="Syrtus Major Hemisphere">
+          </div>
+        </div>
+    </div> 
+  </div>
+
+</body>
+</html>
+
